@@ -1,0 +1,75 @@
+
+\documentclass[a4paper,12pt,table]{scrreprt}
+\usepackage{graphicx} % obrazky
+\graphicspath{{images/}} % cesta k obrazkum
+\usepackage{pdfpages} % include na pdf zadani
+\usepackage{verbatim} % komentare
+\usepackage[section]{placeins} % obrazky pod kapitolama
+\makeatletter
+\usepackage[font=small,labelfont=bf]{caption} %captiony
+\usepackage{amsmath} % matematika bez cisel
+\usepackage{chngpage}
+\usepackage{setspace}
+
+%ROZTAZENI PISMA---------
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\usepackage[czech]{babel} % localize labels to czech (Obsah, Kapitola, Literatura atp.)
+%PDF SETUP--------- DEPRECATED !
+\usepackage[hidelinks]{hyperref} %odkazy v  pdf jsou klikací s barevnými rámečky
+\hypersetup{   % some PDF metadata
+	pdftitle={Návrh a realizace software pro analýzu biomedicínských dat},%   
+	pdfauthor={Lukáš Sulík},%  
+	pdfsubject={},%   
+	pdfkeywords={}%                             
+}
+
+%BIBLIOGRAFIE---------
+\usepackage[backend=bibtex,sorting=none,bibstyle=ieee]{biblatex}
+\addbibresource{bibliography.bib}
+
+%TABLE---------
+%\setlength{\arrayrulewidth}{1px}
+
+%LAYOUT---------
+\renewcommand{\baselinestretch}{1.5} %radkovani s
+\setlength{\parindent}{4em} % odsazeni odstavcu
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\rofoot[\pagemark]{\pagemark}
+\rohead{\rightmark}
+\pagestyle{scrheadings}
+
+
+%FONT---------
+\usepackage{mathptmx} %matematika ala times 
+\usepackage{tgtermes} %české písmo times 
+\renewcommand{\sfdefault}{qhv} % české bezšerivové písmo helvetika
+\renewcommand{\ttdefault}{qcr}%český curier
+\usepackage{cmap}%kvůli prohledávatelnosti pdf souboru
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%GLOSSARY---------
+\usepackage[toc]{glossaries}
+
+\makeglossaries
+
+\begin{document}
+	\include{content/basic}
+	\pagenumbering{arabic}
+	\include{content/uvod}
+	\include{content/pocvideni}
+	\include{content/definice}
+	\include{content/navrh}
+	\include{content/real}
+	\include{content/testovani}
+	\include{content/diskuze}
+	\include{content/zaver}
+	\include{content/prilohy}
+	\includepdf[pages={1}]{zadani.pdf}
+	
+\end{document}

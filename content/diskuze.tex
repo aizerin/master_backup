@@ -1,0 +1,36 @@
+\chapter{Diskuze nad výsledky}
+Z tabulky \ref{tab:avgres} je vidět, že průměrná senzitivita u pozitivních videí je 78.36\%. To se může zdát jako málo, ale vzhledem k tomu, že se krev nachází ve střevech v různé podobě a tvarech, tak nelze vždy určit krev všechnu, jelikož je to mnohdy velmi obtížné. Co je důležité, že ve všech případech byl určen zdroj krvácení, případně jeho největší části. Ostatní nedetekované objekty pak mohou být např. smíchaná krev s tekutinami nebo její velmi malé částečky po okrajích snímku mnohdy již dříve detekované anomálie na snímcích předchozích. Pro relevantnost testů je však nutné tyto objekty zahrnout do \gls{glos:FN}, jelikož odborníci jsou schopni je určit za pomocí jejich predikce a zkušeností. Také pro vyšetření pacienta je podstatné vědět, kde se nachází zdroj krvácení nebo jeho velká část.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\bf Název &  \bf \gls{glos:FRR} & \bf \gls{glos:FAR} & \bf \gls{glos:SE} & \bf \gls{glos:SP} \\ \hline
+		Pozitivní videa & 2,95\% & 1,09\% & 78,36\% & 98,18\% \\ \hline
+		Negativní videa & 0,00\% & 0,83\% & N/A & 99,17\% \\ \hline
+	\end{tabular}
+	\caption{Průměrné výsledky}
+	\label{tab:avgres}
+\end{table}
+
+Specificita a \gls{glos:FAR} u všech videí je, až na jednu výjimku, velice dobrá a je tak možné rychle určit, zda-li pacient je zdráv či nikoliv. Výjimkou je video NOR1.avi, kde bylo rozeznáno 23.28\% mylně pozitivních snímků viz. tabulka \ref{tab:vyslekdy_1}. To je způsobeno tím, že se ve videu nachází hodně odlesků, které pak vytvářejí malé anomálie.
+
+Hodnota \gls{glos:FRR} se drží v přijatelných mezích a nejsou příliš odmítány i snímky, které obsahují krev. Výjimkou je vzorek Endocapsule a to z důvodu, že se zde nachází masivní krvácení, a jak již bylo zmíněno výše, tak některé snímky již nelze přesněji určit a je podstatné, že se našel zdroj krvácení. Pravděpodobně by nevznikly z něčeho, co se nepodařilo určit, a test by tak závisel na tom, jestli se poznají vedlejší efekty krvácení.
+
+Ohledně výsledků toho, jak si na tom stojí software, tak během testování byly zjištěny technické nedostatky a to zejména v ukládání dočasných výsledků algoritmu pro pozdější generování výstupních souborů. Při testování vzorku z Endocapsule, kde bylo detekováno 37889 objektů, tak byly nároky na paměť enormní a musel se testovaný vzorek rozdělit na více částí. Také občas působila problémy knihovna OpenCV. Jelikož se jedná o nativní přístup, tak zde byl problém s garbage collectorem, který neodstraňuje nativní objekty, a proto se muselo dávat pozor, aby se všechny vytvořené nativní objekty korektně zrušily za pomocí k tomu určených funkcí v OpenCV. Jinak výkonnost a optimalizace algoritmů je uspokojivá. Například oba vzorky z PillCam trvalo zpracovat dvě minuty a šestnáct vteřin na průměrném PC.
+
+Naplnění funkčních a nefunkčních požadavků na software se podařilo naplnit s dvěma nedostatky. Z výsledků testování vyplynula nedostatečná optimalizaci při držení detekovaných hodnot a tím velké nároky na paměť. A software umí načítat nativní OpenCV knihovny pouze pro MS Windows. Pro ostatní OS, které OpenCV podporuje není hotové načítání knihoven z důvodu absence těchto prostředí při vývoji.
+\section{Možný směr budoucího vývoje}
+Budoucí vývoj by se mohl ubírat opravnou technických částí softwaru čí jeho vylepšením, na které už nebyl vzhledem časové náročnosti čas. V bodech by se jednalo hlavně o tyto záležitosti:
+\begin{itemize}
+	\item Implementace MapDB pro vyřešení paměťové náročnosti při velkých datech nebo zaměnit způsob ukládání výsledků algoritmu, např. pouze jako číslo snímku, nikoliv celý snímek, a zpětně je pak dohledávat.
+	\item Dodělat načítání nativních OpenCV knihoven pro ostatní OS.
+	\item Implementace Spring Boot a nahrazení frameworku Weld, který musel být odstraněn.
+	\item Větší škálování vláken pro algoritmy a čtení více dat z bufferu jedním algoritmem. Momentálně se snímky z bufferu zpracovávají jeden po jednom.
+	\item Neanalyzovat již pozitivní snímek určený jiným algoritmem.
+	\item Nastavení neměnných konstant algoritmu při prvním běhu a nepočítat je vždy znova pro každý snímek. Toto platí pouze za předpokladu, že všechny snímky budou ve vzorku stejné. 
+	\item Rozložit některé části algoritmu na více vláken a zpracovávat asynchronně části na sobě nezávislé.
+	\item Implementovat webové rozhraní. Uživatel by přistupoval k programu pouze na bázi tenkého klienta a všechny operace by se děly na straně serveru. To by mohlo přinést rychlejší zpracování a případně prohlížení výsledků i na mobilních zařízení/tabletech.
+\end{itemize}
+
+Dále by bylo nutné otestovat software na ještě větším množství dat a případně podle toho doladit algoritmy. Co se týče algoritmů, tak z detekce malých skvrn by šla odstranit část pro zpřesnění výsledků, jelikož se ukázalo, že není tak důležitá. Nejdůležitějším bodem budoucího vývoje zůstává rozšíření programu o další algoritmy na jiné nemoci a vyzkoušení dalších technik, např. neuronové sítě pro detekci nových věcí.

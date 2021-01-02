@@ -1,0 +1,182 @@
+\begin{flushleft}
+\printbibliography[heading=bibintoc,title={Literatura}]
+\end{flushleft}
+\cleardoublepage{}
+
+\newglossaryentry{glos:GUI}{name=GUI, description={Graphical user interface - uživatelské rozhraní}}
+\newglossaryentry{glos:CV}{name=CV, description={Computer vision - počítačové vidění}}
+\newglossaryentry{glos:EER}{name=EER, description={Equal error rate - přijatelná míra chyb}}
+\newglossaryentry{glos:FAR}{name=FAR, description={False acceptance rate - míra špatně detekovaných objektů}}
+\newglossaryentry{glos:FRR}{name=FRR, description={False rejection rate - míra chybně odmítnutých objektů}}
+\newglossaryentry{glos:AVI}{name=AVI, description={Multimediální video formát}}
+\newglossaryentry{glos:JPG}{name=JPG, description={Metoda komprese obrázku}}
+\newglossaryentry{glos:JNA}{name=JNA, description={Java native access - funkcionalita pro volání nativních knihoven z Javy}}
+\newglossaryentry{glos:CDI}{name=CDI, description={Contexts and Dependency Injection - standart pro vkládání závislostí a kontextu. Poprvé byl uveřejněn pro Javu EE 6}}
+\newglossaryentry{glos:MVC}{name=MVC, description={Model-View-Controller - návrhový vzor}}
+\newglossaryentry{glos:WCE}{name=WCE, description={Wireless capsule endoskopy - bezdrátová kapslová endoskopie}}
+\newglossaryentry{glos:TP}{name=TP, description={True positivity - pozitivní anomálie}}
+\newglossaryentry{glos:FP}{name=FP, description={False positivity - falešně pozitivní anomálie}}
+\newglossaryentry{glos:TN}{name=TN, description={True negativity - nepozitivní anomálie}}
+\newglossaryentry{glos:FN}{name=FN, description={False negativity - falešně nepozitivní anomálie}}
+\newglossaryentry{glos:MDR}{name=MDR, description={Missed detection rate - stejné jako FRR}}
+\newglossaryentry{glos:SE}{name=SE, description={Sensitivity - pravděpodobnost detekce}}
+\newglossaryentry{glos:SP}{name=SP, description={Specificity - přesnost detekce}}
+\newglossaryentry{glos:ROI}{name=ROI, description={Rectangle of interest - čtverec/oblast zájmu}}
+{\setstretch{1.0}
+	\printglossary[nonumberlist]
+}
+
+
+\appendix
+\pagenumbering{Roman}\addcontentsline{toc}{part}{Přílohy}\thispagestyle{empty}  \renewcommand{\appendixname}{P\v{r}iloha}%%přílohy, číslování římskými
+
+\part*{Přílohy} %% rename
+
+\listoffigures
+
+\listoftables
+
+\chapter{Konfigurace algoritmů}
+\label{sec:prilohaKonfig}
+V této příloze je konfigurace algoritmů a její vysvětlení.
+\begin{table}[h]
+	\begin{adjustwidth}{-.5in}{-.5in} 
+		\centering
+		\begin{tabular}{|l|l|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\bf Konfigurace} & \multicolumn{1}{c|}{\bf Význam} & \bf Málé skvrny & \bf Velké skvrny \\ \hline
+			highH & \begin{tabular}[c]{@{}l@{}}maximální hranice filtru pro H kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			lowH & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru pro H kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			highS & \begin{tabular}[c]{@{}l@{}}maximální hranice filtru pro S kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			lowS & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru pro S kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			highV & \begin{tabular}[c]{@{}l@{}}maximální hranice filtru pro V kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			lowV & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru pro V kanál\\ ve formátu HSV\end{tabular} & Y & Y \\ \hline
+			kernelDilate & velikost jádra pro dilataci & Y & Y \\ \hline
+			minContourArea & minimální velikost spojité oblasti & Y & Y \\ \hline
+			highHPost & \begin{tabular}[c]{@{}l@{}}maximální hranice zpřesňujícího filtru\\ pro H kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			lowHPost & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru zpřesňujícího filtru\\ pro H kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			highSPost & \begin{tabular}[c]{@{}l@{}}maximální hranice zpřesňujícího filtru\\ pro S kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			lowSPost & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru zpřesňujícího\\ pro S kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			highVPost & \begin{tabular}[c]{@{}l@{}}maximální hranice zpřesňujícího filtru\\ pro V kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			lowVPost & \begin{tabular}[c]{@{}l@{}}minimální hranice filtru zpřesňujícího filtru\\ pro V kanál ve formátu HSV\end{tabular} & Y & N \\ \hline
+			blurKernelSize & velikost jádra pro rozmazání & Y & N \\ \hline
+			cannyThreshMin & minimálníh hranice práhování pro canny & Y & N \\ \hline
+			cannyThreshMax & maximální hranice práhování pro canny & Y & N \\ \hline
+			apertureSize & velikost sobelova operátoru & Y & N \\ \hline
+			maxCircleRadius & maximální velikost kružnice & Y & N \\ \hline
+			crop & hodnota oříznutí & Y & Y \\ \hline
+			acceptArea & minimální procentuální velikost & N & Y \\ \hline
+		\end{tabular}
+		\caption{Konfigurace algoritmů}
+		\label{tab:cfg}
+	\end{adjustwidth}
+\end{table}
+
+\chapter{Konkrétní konfigurace algoritmů}
+\label{sec:prilohaHodnoty}
+V této příloze jsou konkrétní hodnoty konfigurace algoritmů, se kterou byli testovány data. Konfigurace jsou pouze jako textový výstup, jelikož konfigurační XML soubory jsou příliš velké.
+
+\noindent
+\begin{flushleft}
+\textbf{Detekce malých skvrn - první vzorek\\}
+apertureSize-3;
+cannyThreshMax-175;
+lowSPost-195;
+blurKernelSize-3;
+lowH-8;
+lowVPost-200;
+lowHPost-8;
+highSPost-255;
+highH-10;
+lowS-190;
+lowV-167;
+highVPost-210;
+minContourArea-5;
+cannyThreshMin-140;
+highHPost-9;
+maxCircleRadius-15;
+kernelDilate-10;
+highS-255;
+highV-220;
+crop-0.1;
+---\\
+\textbf{Detekce malých skvrn - Endocapsule\\}
+apertureSize-3;
+cannyThreshMax-145;
+lowSPost-135;
+blurKernelSize-3;
+lowH-165;
+lowVPost-75;
+lowHPost-165;
+highSPost-255;
+highH-179;
+lowS-135;
+lowV-75;
+highVPost-191;
+minContourArea-5;
+cannyThreshMin-130;
+highHPost-179;
+maxCircleRadius-15;
+kernelDilate-10;
+highS-255;
+highV-191;
+crop-0.1;
+---\\
+\textbf{Detekce malých skvrn - PillCam\\}
+apertureSize-3;
+cannyThreshMax-145;
+lowSPost-190;
+blurKernelSize-3;
+lowH-8;
+lowVPost-160;
+lowHPost-8;
+highSPost-255;
+highH-11;
+lowS-190;
+lowV-150;
+highVPost-220;
+minContourArea-5;
+cannyThreshMin-130;
+highHPost-11;
+maxCircleRadius-15;
+kernelDilate-10;
+highS-255;
+highV-220;
+crop-0.1;
+---\\
+\textbf{Detekce velkých skvrn - první vzorek\\}
+lowV-167;
+acceptArea-0.15;
+minContourArea-5;
+lowH-8;
+kernelDilate-5;
+highS-255;
+highH-10;
+lowS-190;
+crop-0.1;
+highV-220;
+---\\
+\textbf{Detekce velkých skvrn - Endocapsule\\}
+lowV-75;
+acceptArea-0.15;
+minContourArea-5;
+lowH-165;
+kernelDilate-5;
+highS-255;
+highH-179;
+lowS-135;
+crop-0.1;
+highV-191;
+---\\
+\textbf{Detekce velkých skvrn - PilLCam\\}
+lowV-61;
+acceptArea-0.15;
+minContourArea-5;
+lowH-6;
+kernelDilate-5;
+highS-255;
+highH-9;
+lowS-170;
+crop-0.1;
+highV-255;
+\end{flushleft}

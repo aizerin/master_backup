@@ -1,0 +1,570 @@
+\ifglsentryexists{glos:GUI}{}%
+{%
+\gls@defglossaryentry{glos:GUI}%
+{%
+name={GUI},%
+sort={GUI},%
+type={main},%
+first={GUI},%
+firstplural={GUIs},%
+text={GUI},%
+plural={GUIs},%
+description={Graphical user interface - uživatelské rozhraní},%
+descriptionplural={Graphical user interface - uživatelské rozhraní},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:CV}{}%
+{%
+\gls@defglossaryentry{glos:CV}%
+{%
+name={CV},%
+sort={CV},%
+type={main},%
+first={CV},%
+firstplural={CVs},%
+text={CV},%
+plural={CVs},%
+description={Computer vision - počítačové vidění},%
+descriptionplural={Computer vision - počítačové vidění},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:EER}{}%
+{%
+\gls@defglossaryentry{glos:EER}%
+{%
+name={EER},%
+sort={EER},%
+type={main},%
+first={EER},%
+firstplural={EERs},%
+text={EER},%
+plural={EERs},%
+description={Equal error rate - přijatelná míra chyb},%
+descriptionplural={Equal error rate - přijatelná míra chyb},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:FAR}{}%
+{%
+\gls@defglossaryentry{glos:FAR}%
+{%
+name={FAR},%
+sort={FAR},%
+type={main},%
+first={FAR},%
+firstplural={FARs},%
+text={FAR},%
+plural={FARs},%
+description={False acceptance rate - míra špatně detekovaných objektů},%
+descriptionplural={False acceptance rate - míra špatně detekovaných objektů},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:FRR}{}%
+{%
+\gls@defglossaryentry{glos:FRR}%
+{%
+name={FRR},%
+sort={FRR},%
+type={main},%
+first={FRR},%
+firstplural={FRRs},%
+text={FRR},%
+plural={FRRs},%
+description={False rejection rate - míra chybně odmítnutých objektů},%
+descriptionplural={False rejection rate - míra chybně odmítnutých objektů},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:AVI}{}%
+{%
+\gls@defglossaryentry{glos:AVI}%
+{%
+name={AVI},%
+sort={AVI},%
+type={main},%
+first={AVI},%
+firstplural={AVIs},%
+text={AVI},%
+plural={AVIs},%
+description={Multimediální video formát},%
+descriptionplural={Multimediální video formát},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:JPG}{}%
+{%
+\gls@defglossaryentry{glos:JPG}%
+{%
+name={JPG},%
+sort={JPG},%
+type={main},%
+first={JPG},%
+firstplural={JPGs},%
+text={JPG},%
+plural={JPGs},%
+description={Metoda komprese obrázku},%
+descriptionplural={Metoda komprese obrázku},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:JNA}{}%
+{%
+\gls@defglossaryentry{glos:JNA}%
+{%
+name={JNA},%
+sort={JNA},%
+type={main},%
+first={JNA},%
+firstplural={JNAs},%
+text={JNA},%
+plural={JNAs},%
+description={Java native access - funkcionalita pro volání nativních knihoven z Javy},%
+descriptionplural={Java native access - funkcionalita pro volání nativních knihoven z Javy},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:CDI}{}%
+{%
+\gls@defglossaryentry{glos:CDI}%
+{%
+name={CDI},%
+sort={CDI},%
+type={main},%
+first={CDI},%
+firstplural={CDIs},%
+text={CDI},%
+plural={CDIs},%
+description={Contexts and Dependency Injection - standart pro vkládání závislostí a kontextu. Poprvé byl uveřejněn pro Javu EE 6},%
+descriptionplural={Contexts and Dependency Injection - standart pro vkládání závislostí a kontextu. Poprvé byl uveřejněn pro Javu EE 6},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:MVC}{}%
+{%
+\gls@defglossaryentry{glos:MVC}%
+{%
+name={MVC},%
+sort={MVC},%
+type={main},%
+first={MVC},%
+firstplural={MVCs},%
+text={MVC},%
+plural={MVCs},%
+description={Model-View-Controller - návrhový vzor},%
+descriptionplural={Model-View-Controller - návrhový vzor},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:WCE}{}%
+{%
+\gls@defglossaryentry{glos:WCE}%
+{%
+name={WCE},%
+sort={WCE},%
+type={main},%
+first={WCE},%
+firstplural={WCEs},%
+text={WCE},%
+plural={WCEs},%
+description={Wireless capsule endoskopy - bezdrátová kapslová endoskopie},%
+descriptionplural={Wireless capsule endoskopy - bezdrátová kapslová endoskopie},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:TP}{}%
+{%
+\gls@defglossaryentry{glos:TP}%
+{%
+name={TP},%
+sort={TP},%
+type={main},%
+first={TP},%
+firstplural={TPs},%
+text={TP},%
+plural={TPs},%
+description={True positivity - pozitivní anomálie},%
+descriptionplural={True positivity - pozitivní anomálie},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:FP}{}%
+{%
+\gls@defglossaryentry{glos:FP}%
+{%
+name={FP},%
+sort={FP},%
+type={main},%
+first={FP},%
+firstplural={FPs},%
+text={FP},%
+plural={FPs},%
+description={False positivity - falešně pozitivní anomálie},%
+descriptionplural={False positivity - falešně pozitivní anomálie},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:TN}{}%
+{%
+\gls@defglossaryentry{glos:TN}%
+{%
+name={TN},%
+sort={TN},%
+type={main},%
+first={TN},%
+firstplural={TNs},%
+text={TN},%
+plural={TNs},%
+description={True negativity - nepozitivní anomálie},%
+descriptionplural={True negativity - nepozitivní anomálie},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:FN}{}%
+{%
+\gls@defglossaryentry{glos:FN}%
+{%
+name={FN},%
+sort={FN},%
+type={main},%
+first={FN},%
+firstplural={FNs},%
+text={FN},%
+plural={FNs},%
+description={False negativity - falešně nepozitivní anomálie},%
+descriptionplural={False negativity - falešně nepozitivní anomálie},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:MDR}{}%
+{%
+\gls@defglossaryentry{glos:MDR}%
+{%
+name={MDR},%
+sort={MDR},%
+type={main},%
+first={MDR},%
+firstplural={MDRs},%
+text={MDR},%
+plural={MDRs},%
+description={Missed detection rate - stejné jako FRR},%
+descriptionplural={Missed detection rate - stejné jako FRR},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:SE}{}%
+{%
+\gls@defglossaryentry{glos:SE}%
+{%
+name={SE},%
+sort={SE},%
+type={main},%
+first={SE},%
+firstplural={SEs},%
+text={SE},%
+plural={SEs},%
+description={Sensitivity - pravděpodobnost detekce},%
+descriptionplural={Sensitivity - pravděpodobnost detekce},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:SP}{}%
+{%
+\gls@defglossaryentry{glos:SP}%
+{%
+name={SP},%
+sort={SP},%
+type={main},%
+first={SP},%
+firstplural={SPs},%
+text={SP},%
+plural={SPs},%
+description={Specificity - přesnost detekce},%
+descriptionplural={Specificity - přesnost detekce},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{glos:ROI}{}%
+{%
+\gls@defglossaryentry{glos:ROI}%
+{%
+name={ROI},%
+sort={ROI},%
+type={main},%
+first={ROI},%
+firstplural={ROIs},%
+text={ROI},%
+plural={ROIs},%
+description={Rectangle of interest - čtverec/oblast zájmu},%
+descriptionplural={Rectangle of interest - čtverec/oblast zájmu},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
